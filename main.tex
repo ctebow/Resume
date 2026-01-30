@@ -1,0 +1,88 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep, topsep=0pt}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\bfseries\large}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{4pt}
+
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{Caden Tebow}} \\[4pt]
+\href{mailto:ctebow@uchicago.edu}{ctebow@uchicago.edu} \;|\; (612) 695-8210 \;|\;
+\href{https://github.com/ctebow}{github.com/ctebow} \;|\; LinkedIn
+\end{center}
+
+\vspace{-6pt}
+
+\section*{Education}
+
+\textbf{The University of Chicago} \hfill Chicago, IL \\
+Bachelor of Science in Physics and Computer Science (GPA: 3.92/4.00) \hfill Expected June 2028 \\
+Relevant Coursework: DSA, Differential Equations, Systems Programming, Quantum Mechanics \\
+Awards: Dean’s List 2024-2025, U.S. Presidential Scholar Semi-Finalist \\
+Activities: Kappa Theta Pi (Technology Fraternity), PULSE-A, Tech Team, Chamber Orchestra, Physics Society
+
+\vspace{2pt}
+
+\section*{Skills}
+
+Programming Languages: Python, C, C++, JavaScript \\
+Libraries: NumPy, SciPy, OpenCV, MatPlotLib, PyTorch, FastAPI, React.js \\
+Developer Tools: Git, Linux, Docker, Valgrind, GDB, Criterion, Firmware Development (Teensy, Arduino)
+
+
+\section*{Experience}
+
+\textbf{Kavli Institute for Cosmological Physics: UChicago Vieregg Lab} \hfill Chicago, IL \\
+Undergraduate Researcher \hfill January 2025 – Present
+\begin{itemize}
+\item Engineer custom firmware for radar sensors, integrating control via a Teensy microcontroller and Python automation scripts, validating the performance of radar sensors and creating faster testing workflows while achieving 1mm accuracy.
+\item Design end-to-end custom PCB hardware, creating a KiCad-based breakout board for a precision distance sensor, selecting components, building full schematics, running electrical simulations and design checks, and managing manufacturing.
+\end{itemize}
+
+\textbf{PULSE-A CubeSat - NASA Undergraduate Satellite} \hfill Chicago, IL \\
+Payload Engineer \hfill September 2025 – Present
+\begin{itemize}
+\item Develop finite-state-machine spiral-search algorithms for a 3U CubeSat’s acquisition system, enabling autonomous target detection for a 2027 mission demonstrating laser communications via circular-polarized shift-keying (CPolSK).
+\item Implement a closed-loop fine-pointing control algorithm that computes micro-adjustments from quad-photodiode voltage differentials, enhancing tracking stability and supporting reliable high-bandwidth optical downlink performance.
+\item Benchmark, test, and deploy a MEMS Fine Steering Mirror (FSM) with custom C++ firmware to $\sim$3\% error from documented benchmarks while in an ESD and cleanroom setting.
+\end{itemize}
+
+\textbf{Connections for Abused Women and their Children} \hfill Chicago, IL \\
+Software Developer \hfill August 2025 – December 2025
+\begin{itemize}
+\item Re-designed JS/Flask website of local non-profit organization for clarity and data privacy, with over 200,000 total impressions.
+\end{itemize}
+
+\section*{Projects}
+
+\textbf{Drawn Circuit Identifier}:
+\href{https://github.com/ctebow/breadMaker-backend}{github.com/ctebow/breadMaker-backend} \hfill June 2025
+\begin{itemize}
+\item Developed a machine learning model that was trained on 10,000+ images using PyTorch and OpenCV for automatic hand-drawn circuit element uploads, streamlining the process to be 2x faster.
+\item Tuned model over multiple epochs using a local GPU and manually bounded classes, with validation on a 300-image test set achieving an 85\% mAP@50 with $>$80\% confidence across 30+ circuit classes.
+\end{itemize}
+
+\textbf{Retrieval-Augmented Generation Pipeline}:
+\href{https://github.com/ctebow/Local-RAG-with-Gemini}{github.com/ctebow/Local-RAG-with-Gemini} \hfill August 2025
+\begin{itemize}
+\item Engineered a retrieval-augmented generation pipeline using vector embeddings with chunking and top-k search, enabling for automatic context generation when prompting an LLM, resulting in code-base aware development assistance.
+\item Optimized for constrained local hardware to support 2,000+ token responses within a 4,000-token context window, allowing for $<$20 second response times and saving 15 seconds per LLM prompt.
+\end{itemize}
+
+\textbf{Circuit Editing Website}:
+\href{https://bread-maker-frontend-git-main-cadens-projects-d48b21c6.vercel.app/}{Vercel Deployment} \hfill June 2025
+\begin{itemize}
+\item Built and deployed circuit drawing website on Vercel using React.js, Node.js, and FastAPI that uses wire-drawing and connection heuristics to allow for node identification, circuit connections generation, and exporting into .net file format.
+\end{itemize}
+
+\end{document}
