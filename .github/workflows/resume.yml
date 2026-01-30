@@ -26,7 +26,7 @@ jobs:
       - name: Prepare Pages artifact
         run: |
           mkdir public
-          cp resume.pdf public/
+          cp resume.pdf index.html public/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
